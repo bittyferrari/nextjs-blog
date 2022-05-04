@@ -8,6 +8,7 @@ import Date from "../components/date";
 export async function getStaticProps() {
     console.log("getStaticProps");
 
+    console.log(process.env.DB_HOST);
     const allPostsData = getSortedPostsData();
     return {
         props: {
